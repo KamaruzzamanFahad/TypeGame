@@ -18,6 +18,7 @@ function keyset(){
     keys = alpaarry[ind];
     keyset.innerText = keys;
     document.getElementById(keys).classList.add('bg-yellow-500');
+    document.getElementById(keys).classList.add('text-black');
 }
 
 let finalscore = document.getElementById('finalsc');
