@@ -36,6 +36,13 @@ document.addEventListener('keyup', function(event) {
             scores = parseInt(score.innerText);
             score.innerText = scores+1; 
             keyset();
+            
+            if(score.innerText==50||score.innerText==100||score.innerText==150||score.innerText==200||score.innerText==250||score.innerText==300||score.innerText==350||score.innerText==400||score.innerText==450||score.innerText==500||score.innerText==550||score.innerText==600||score.innerText==650||score.innerText==700||score.innerText==750||score.innerText==800||score.innerText==850||score.innerText==900){
+                lifes = parseInt(life.innerText);
+                life.innerText = lifes+1;
+                console.log("done");
+            }
+            
         }
         else{
              lifes = parseInt(life.innerText);
