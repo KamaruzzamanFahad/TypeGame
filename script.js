@@ -29,6 +29,23 @@ let final = document.getElementById('final');
 const life = document.getElementById('life');
 let lifes =4;
 
+document.getElementById('scoreplus').addEventListener('click',function(){
+    
+    const lifea = document.getElementById('life');
+    let scorea = document.getElementById('scoree');
+
+    if(scorea.innerText > 30){
+        console.log('big')
+        scorea.innerText = parseInt(scorea.innerText)-30;
+        lifea.innerText = parseInt(lifea.innerText)+1;
+    }
+    else{
+        alert("You Haven't enough point for buying a Life")
+    }
+    
+})
+
+
 document.addEventListener('keyup', function(event) {
     
     if(alpaarry.includes(event.key)){
